@@ -60,5 +60,5 @@ jobs:
       - name: Deploy to Azure Web App (Docker container)
         uses: azure/webapps-deploy@v2
         with:
-          app-name: "my-azure-webapp" # <-- replace with your App Service name
+          app-name: "simple-web-app" # <-- replace with your App Service name
           images: "${{ secrets.DOCKER_USERNAME }}/simple-web-app:latest"
